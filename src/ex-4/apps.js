@@ -1,16 +1,20 @@
-function getelement() {
-    let sectionEx1 = document.getElementById('ex-4');
-    return sectionEx1;
-}
-​
-function render() {
-    let section2 = getelement();
-    let numero1 = prompt(`Introduce primer numero: `);
-    let numero2 = prompt(`Introduce segundo numero: `);
-    let numeroint1 = parseInt(numero1);
-    let numeroint2 = parseInt(numero2);
-    let resultado1 = numeroint1 + numeroint2;
-    let resultado2 = "El resultado es: " + resultado1;
-    section2.innerHTML = `<h1>${resultado2}</h1>`;
-}​
-render();
+//Ejercicio de JavaScript 1
+
+//Escribe un programa que pida dos números y escriba “La suma de <numero-uno> con <numero-dos> es <resultado>”.
+//El resultado -> “La suma de <numero-uno> con <numero-dos> es <resultado>”
+
+//Hay que vincular el archivo js con el html
+//Hay que vicular el archivo css con el html
+
+// Solicitar al usuario dos números
+const numero1 = prompt("Introduce el primer número: ");
+const numero2 = prompt("Introduce el segundo número: ");
+
+// Calcular la suma de los números
+const suma = Number(numero1) + Number(numero2);
+
+// Construir la frase de resultado
+const resultado = "La suma de " + numero1 + " con " + numero2 + " es " + suma + ".";
+
+// Mostrar el resultado en la pantalla
+console.log(resultado);
